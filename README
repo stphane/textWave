@@ -1,0 +1,13 @@
+* Copyright 2012, Stephane Leduc
+* Distributed under GPL license.
+* See http://www.gnu.org/copyleft/gpl.html for more details.
+ 
+v0.1 2012-05
+============
+Tested under
+- Firefox 10,11,12
+- Chrome
+- Opera 10+
+- IE 8,9
+
+Should work since JQ 1.4.2

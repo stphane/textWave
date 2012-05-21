@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>"textWave" plugin for jQuery</title>
+		<meta name="description" content="textWave plug-in for jQuery is a nice looking effect to be applied against an inline html node.">
+		<!--[if IE]>
+			<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<style>
+			html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+			pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+			li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+			{margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+			body {line-height: 1;}
+			ol, ul {list-style: none;}
+			blockquote, q {quotes: none;}
+			blockquote:before, blockquote:after,
+			q:before, q:after {content: '';content: none;}
+
+			/* remember to define focus styles! */
+			:focus {outline: 0;}
+
+			/* remember to highlight inserts somehow! */
+			ins {text-decoration: none;}
+			del {text-decoration: line-through;}
+
+			/* tables still need 'cellspacing="0"' in the markup */
+			table {border-collapse: collapse;border-spacing: 0; width:100%}
+			table td{font-size:10px}
+			
+			
+			body { background: #000000; font: normal 62.5% "Trebuchet MS", Verdana, Helvetica, Arial,sans-serif; color: #fff; margin: 0px; padding: 0px;font-size:12px}
+				h1, h2, h3, h4, h5, h6 { font-family: "Trebuchet MS", Verdana, Helvetica, Arial,sans-serif; margin: 0; padding: 0; letter-spacing: 0; border-bottom: 0; }
+				a { border-bottom: 0px; color: #5DB0E6; }
+					a:focus { outline: 1px dotted #eee; }
+					a:active { outline: 0px; }
+					a:hover { color: #7bc4f4; }
+				
+				#wrapper{margin:200px auto 0 auto;width:960px; overflow:hidden;font-size:16px;text-align:center;}
+					#wrapper span#content{color:#00BF08}
+						#params{clear:both;font-size:10px;text-align:center}
+		</style>
+	</head>
+	<body>
+	
+		<div id="wrapper">
+			<h1>textWave jQuery plugin</h1>
+			<span>[<span id="content"></span>]</span>
+
+			<!-- Animation controls -->
+			<div id="params">
+				<input type="button" id="stopAnim" value="Stop animation" />
+				<select title="Select the framerate" id="rateSelect">
+					<option value="21">21</option><option selected="selected" value="42">42</option>
+					<option value="63">63</option><option value="84">84</option>
+					<option value="105">105</option><option value="126">126</option>
+					<option value="147">147</option><option value="168">168</option>
+					<option value="189">189</option><option value="210">210</option>
+				</select>
+				<select title="Select how many times effect should play" id="repeatSelect">
+					<option value="1">1</option><option value="2">2</option>
+					<option value="loop">infinite</option></select>
+				<select title="Select enlargement ratio" id="ratioSelect">
+					<option value="2">2</option><option value="3">3</option>
+					<option value="4">4</option><option value="5">5</option>
+				</select>
+				<input type="button" id="restartAnim" value="Start Animation" />
+			</div>
+		</div>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/textwave.js"></script>
+		<script type="text/javascript">
+		//<![CDATA[
+			// Demo
+			$(function(){
+				$('#stopAnim').click(function(evt){
+					$('#content').textWave('stop');
+				}).siblings('#restartAnim').click(function(evt){
+					$('#content').textWave({
+						text:'Enjoy JQuery !',
+						ratio:$('#ratioSelect').val(),
+						repeat:$('#repeatSelect').val(),
+						framerate:$('#rateSelect').val()
+					});
+				}).click();
+			});
+		// ]]>
+		</script>
+	</body>
+</html>
