@@ -51,7 +51,6 @@
 
 			<!-- Animation controls -->
 			<div id="params">
-				<input type="button" id="stopAnim" value="Stop animation" />
 				<select title="Select the framerate" id="rateSelect">
 					<option value="21">21</option><option selected="selected" value="42">42</option>
 					<option value="63">63</option><option value="84">84</option>
@@ -67,11 +66,12 @@
 					<option value="4">4</option><option value="5">5</option>
 				</select>
 				<input type="button" id="restartAnim" value="Start Animation" />
+				<input type="button" id="stopAnim" title="This will permanently stop animations against the elment" value="Stop"/>
 			</div>
 		</div>
 
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/textwave.js"></script>
+		<script type="text/javascript" src="js/jquery.textWave.js"></script>
 		<script type="text/javascript">
 		//<![CDATA[
 			// Demo
