@@ -1,13 +1,4 @@
-* Copyright Stéphane Leduc
-* Distributed under GPLv3 license.
-* See http://www.gnu.org/licenses/gpl-3.0.en.html for more details.
-
- 
-v1.0 2011-05
-==============
-jQuery versions >=1.3.2
-Browsers versions : depends on the jQuery version
-
-Demo
-==============
-http://foobar.perso.sfr.fr/
+v1.0 2011-05 [Demo](https://jsfiddle.net/Stphane/wfpt92y7/)
+==
+Should work with jQuery >= _1.3.2_
+Distributed under [GPLv3 license](http://www.gnu.org/licenses/gpl-3.0.en.html for more details)

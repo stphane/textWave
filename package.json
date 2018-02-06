@@ -1,0 +1,26 @@
+{
+  "name": "textwave",
+  "version": "1.0.0",
+  "description": "Visual wave text effect using Jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stphane/textWave.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "Text",
+    "effect",
+    "fx"
+  ],
+  "author": "Stephane Leduc",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/stphane/textWave/issues"
+  },
+  "homepage": "https://github.com/stphane/textWave#readme"
+}
